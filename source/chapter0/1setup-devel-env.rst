@@ -5,7 +5,7 @@
    :hidden:
    :maxdepth: 4
    
-hw本节我们将完成环境配置并成功运行 uCore-Tutorial-v2 。整个流程分为下面几个部分：
+hww本节我们将完成环境配置并成功运行 uCore-Tutorial-v2 。整个流程分为下面几个部分：
 
 - 系统环境配置
 - Riscv下 C 开发环境配置
