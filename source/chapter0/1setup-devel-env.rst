@@ -21,6 +21,7 @@ classroom配置
 基于github classroom，可方便建立开发用的git repository，并可基于github的 codespace（在线版ubuntu +vscode）在线开发使用。整个开发环境仅仅需要一个网络浏览器。classroom配置步骤如下：
 
 .. note::
+
    1.在网络浏览器中用自己的github id登录github.com
 
    2.接收实验练习uCore-RV-64的github classroom在线邀请(https://classroom.github.com/a/bY_uu2Q3)，根据提示接受该实验练习。
