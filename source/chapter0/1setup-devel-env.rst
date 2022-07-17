@@ -5,21 +5,34 @@
    :hidden:
    :maxdepth: 4
    
-hww本节我们将完成环境配置并成功运行 uCore-Tutorial-v2 。整个流程分为下面几个部分：
+本节我们将完成环境配置并成功运行 uCore-Tutorial-v2 。整个流程分为下面几个部分：
 
+- classroom配置
 - 系统环境配置
 - Riscv下 C 开发环境配置
 - Qemu 模拟器安装
 - 其他工具安装
 - 运行 uCore-Tutorial-v2
 
+目前实验仅支持 Ubuntu18.04 + 操作系统。对于 Windows10 和 macOS 上的用户，可以使用 VMware 或 VirtualBox 安装一台 Ubuntu18.04 虚拟机并在上面进行实验。除了前面提到的几种方法，也可以基于github classroom witch codespaces进行开发。
+
+classroom配置
+-------------------------------
+基于github classroom，可方便建立开发用的git repository，并可基于github的 codespace（在线版ubuntu +vscode）在线开发使用。整个开发环境仅仅需要一个网络浏览器。
+1.在网络浏览器中用自己的github id登录github.com
+2.接收实验练习uCore-RV-64的github classroom在线邀请(https://classroom.github.com/a/bY_uu2Q3)，根据提示接受该实验练习。
+3.完成上一步后，你的实验练习uCore-RV-64的github repository会被自动建立好，刷新页面即可看到github repository的链接，点击此github repository的链接，就可看到你要完成的实验了。
+4.在你的实验练习的网页的中上部可以看到一个醒目的code绿色按钮，点击后，可以进一步看到 codespace 标签和醒目的create codesapce on main绿色按钮。请点击这个绿色按钮，就可以进入到在线的ubuntu + vscode环境中。
+5.配置codespace中的开发环境（rustc，qemu等工具）。你可以在vscode的terminal中执行make ubuntu_setenv（需在master分支下）自动配置开发环境（执行``sudo``需要root权限，仅需要执行一次），也可以按照下面的环境安装提示在vscode的terminal中进行环境配置。
+6.重要：在vscode的terminal中执行make setupclassroom（需在master分支下，后面各分支的设置也需在master分支）配置github classroom的自动评分功能。也可分别配置各个分支的github classroom自动评分功能，例如：make setupclassroom1为配置ch1的github classroom自动评分功能，共有8个分支。
+7.然后就可以基于在线vscode进行开发、运行、提交等完整的实验过程了。
+8.完成提交后会触发classroom提供的自动测试功能，你可以点击仓库名下边的“Actions”标签查看自动测试的结果，第一次提交触发自动测试可能需要执行5-7分钟，随后的提交所触发的自动测试则不需要这么长的时间。
+上述的3，4，5步不是必须的，你也可以直接克隆Github Classroom生成git repository到本地，按照下面的环境安装提示配置好本地的开发环境，然后在本地进行实验开发与提交。
+
 系统环境配置
 -------------------------------
 
-目前实验仅支持 Ubuntu18.04 + 操作系统。对于 Windows10 和 macOS 上的用户，可以使用 VMware 或 
-VirtualBox 安装一台 Ubuntu18.04 虚拟机并在上面进行实验。
-
-特别的，Windows10 的用户可以通过系统内置的 WSL2 虚拟机（请不要使用 WSL1）来安装 Ubuntu 18.04 / 20.04 。
+Windows10 的用户可以通过系统内置的 WSL2 虚拟机（请不要使用 WSL1）来安装 Ubuntu 18.04 / 20.04 。
 步骤如下：
 
 - 升级 Windows 10 到最新版（Windows 10 版本 18917 或以后的内部版本）。注意，如果
