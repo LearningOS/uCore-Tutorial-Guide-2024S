@@ -20,7 +20,7 @@ classroom配置
 -------------------------------
 基于github classroom，可方便建立开发用的git repository，并可基于github的 codespace（在线版ubuntu +vscode）在线开发使用。整个开发环境仅仅需要一个网络浏览器。classroom配置步骤如下：
 
-.. note::
+::
 
    1.在网络浏览器中用自己的github id登录github.com
 
@@ -32,7 +32,7 @@ classroom配置
 
    5.配置codespace中的开发环境（rustc，qemu等工具）。你可以在vscode的terminal中执行make ubuntu_setenv（需在master分支下）自动配置开发环境（执行``sudo``需要root权限，仅需要执行一次），也可以按照下面的环境安装提示在vscode的terminal中进行环境配置。
 
-   6.重要：在vscode的terminal中执行make setupclassroom（需在master分支下，后面各分支的设置也需在master分支）配置github classroom的自动评分功能。也可分别配置各个分支的github classroom自动评分功能，例如：make setupclassroom1为配置ch1的github classroom自动评分功能，共有8个分支。
+   6.**重要**：在vscode的terminal中执行make setupclassroom（需在master分支下，后面各分支的设置也需在master分支）配置github classroom的自动评分功能。也可分别配置各个分支的github classroom自动评分功能，例如：make setupclassroom1为配置ch1的github classroom自动评分功能，共有8个分支。
 
    7.然后就可以基于在线vscode进行开发、运行、提交等完整的实验过程了。
 
