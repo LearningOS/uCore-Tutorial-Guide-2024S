@@ -22,7 +22,7 @@ classroom配置
 
    1.在网络浏览器中用自己的github id登录github.com
 
-   2.接收实验练习uCore-RV-64的github classroom'在线邀请<https://classroom.github.com/a/bY_uu2Q3>'_，根据提示接受该实验练习。
+   2.接收实验练习uCore-RV-64的github classroom'在线邀请 <https://classroom.github.com/a/bY_uu2Q3>'_，根据提示接受该实验练习。
 
    3.完成上一步后，你的实验练习uCore-RV-64的github repository会被自动建立好，刷新页面即可看到github repository的链接，点击此github repository的链接，就可看到你要完成的实验了。
 
@@ -30,7 +30,7 @@ classroom配置
    
    5.配置环境。环境包括实验开发环境（rustc，qemu等工具）和github classroom自动评分环境。你可以在vscode的terminal中执行make setenv（需要在master分支下）自动配置两种环境。而这两种环境也可以分别配置，make ubuntu_setenv可以自动配置实验开发环境，make classroom_setenv可以自动配置github classroom自动评分环境。
 
-   6.然后就可以基于在线vscode进行开发、运行、提交等完整的实验过程了，也可以在配置好环境的其他ubuntu中进行实验。实验共分为8章对应着分支ch1、ch2、ch3、ch4、ch5、ch6、ch7、ch8，你可以切换到对应的分支，然后根据实验的'在线文档<https://ucore-rv-64.github.io/uCore-RV-64-doc/index.html>'_的要求进行实验并提交。
+   6.然后就可以基于在线vscode进行开发、运行、提交等完整的实验过程了，也可以在配置好环境的其他ubuntu中进行实验。实验共分为8章对应着分支ch1、ch2、ch3、ch4、ch5、ch6、ch7、ch8，你可以切换到对应的分支，然后根据实验的'在线文档 <https://ucore-rv-64.github.io/uCore-RV-64-doc/index.html>'_的要求进行实验并提交。
 
    7.完成提交后会触发classroom提供的自动测试功能，你可以点击仓库名下边的“Actions”标签查看自动测试的结果，第一次提交触发自动测试可能需要执行5-7分钟，随后的提交所触发的自动测试则不需要这么长的时间。
 
