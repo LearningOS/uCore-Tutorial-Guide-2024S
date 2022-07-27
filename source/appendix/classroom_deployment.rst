@@ -1,6 +1,27 @@
+部署帮助文档
+^^^^^^^^^^
+
+相关仓库
+-------
+
+`基准代码仓库 <https://github.com/uCore-RV-64/uCore-RV-64-base>`_
+
+
+`文档仓库 <https://github.com/uCore-RV-64/uCore-RV-64-doc>`_
+
+
+`实验参考答案仓库 <https://github.com/uCore-RV-64/uCore-RV-64-answer>`_
+
+
+`自动测试脚本仓库 <https://github.com/uCore-RV-64/uCore-RV-64-test>`_
+
+
+`codespace开发环境配置脚本仓库 <https://github.com/uCore-RV-64/uCore-RV-64-conf>`_
+
 github classroom部署说明
-^^^^^^^^^^^^^^^^^^^^^^^
-## 1.使用github账号登录github classroom，然后给github classroom授权。接下来根据提示创建classroom和organization。
+-----------------------
+
+1.使用github账号登录github classroom，然后给github classroom授权。接下来根据提示创建classroom和organization。
 
 .. image:: ../resources/classroom_deployment1.png
 
@@ -10,7 +31,7 @@ github classroom部署说明
 
 .. image:: ../resources/classroom_deployment4.png
 
-## 2.在classroom中添加合作者（其他管理员或助教）、学生。
+2.在classroom中添加合作者（其他管理员或助教）、学生。
 
 .. image:: ../resources/classroom_deployment5.png
 
