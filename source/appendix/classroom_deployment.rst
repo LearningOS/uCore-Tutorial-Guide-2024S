@@ -1,3 +1,6 @@
+=======================
+github classroom部署说明
+=======================
 1.使用github账号登录github classroom，然后给github classroom授权。接下来根据提示创建classroom和organization。
 
 2.在classroom添加合作者（其他管理员或助教）、学生。
