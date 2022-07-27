@@ -32,3 +32,10 @@ github classroom部署说明
 .. image:: ../resources/classroom_deployment11.png
 
 参考链接：https://docs.github.com/en/education/manage-coursework-with-github-classroom/get-started-with-github-classroom
+
+参考连接：test_
+
+.. _test: https://github.com/SeayXu/
+
+
+
