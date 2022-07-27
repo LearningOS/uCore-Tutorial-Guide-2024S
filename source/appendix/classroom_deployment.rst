@@ -1,7 +1,7 @@
 部署帮助文档
 ^^^^^^^^^^
 
-相关仓库
+一、相关仓库
 -------
 
 `基准代码仓库 <https://github.com/uCore-RV-64/uCore-RV-64-base>`_
@@ -18,7 +18,7 @@
 
 `codespace开发环境配置脚本仓库 <https://github.com/uCore-RV-64/uCore-RV-64-conf>`_
 
-github classroom部署说明
+二、github classroom部署说明
 -----------------------
 
 1.使用github账号登录github classroom，然后给github classroom授权。接下来根据提示创建classroom和organization。
