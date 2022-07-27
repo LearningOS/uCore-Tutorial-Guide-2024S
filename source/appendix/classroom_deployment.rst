@@ -1,7 +1,7 @@
 =======================
 github classroom部署说明
 =======================
-1.使用github账号登录github classroom，然后给github classroom授权。接下来根据提示创建classroom和organization。
+## 1.使用github账号登录github classroom，然后给github classroom授权。接下来根据提示创建classroom和organization。
 
 .. image:: ../resources/classroom_deployment1.png
 
@@ -11,7 +11,7 @@ github classroom部署说明
 
 .. image:: ../resources/classroom_deployment4.png
 
-2.在classroom中添加合作者（其他管理员或助教）、学生。
+## 2.在classroom中添加合作者（其他管理员或助教）、学生。
 
 .. image:: ../resources/classroom_deployment5.png
 
@@ -32,9 +32,5 @@ github classroom部署说明
 .. image:: ../resources/classroom_deployment11.png
 
 
-github classroom_
-
-.. _test: https://github.com/SeayXu/
-
-`github classroom <https://github.com/SeayXu/>`_。
+`github classroom部署参考文档 <https://github.com/SeayXu/>`_
 
