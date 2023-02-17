@@ -8,7 +8,7 @@ uCore-Tutorial-Guide 2022 Autumn
 
 .. toctree::
    :maxdepth: 2
-   :caption: Part1 - Just do it!
+   :caption: 正文
    :hidden:
    
    chapter0/index
@@ -20,6 +20,16 @@ uCore-Tutorial-Guide 2022 Autumn
    chapter6/index
    chapter7/index
    chapter8/index
+
+.. toctree::
+   :maxdepth: 2
+   :caption: 附录
+   :hidden:
+
+   appendix/classroom_deployment.rst
+   appendix-b/index
+   appendix-c/index
+   appendix-d/index
 
 .. toctree::
    :maxdepth: 2
