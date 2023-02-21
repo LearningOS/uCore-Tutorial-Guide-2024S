@@ -245,6 +245,28 @@ GDB 调试支持
 
 解压后在 ``bin`` 目录下即可找到 ``riscv64-unknown-elf-gdb`` 以及另外一些常用工具 ``objcopy/objdump/readelf`` 等。
 
+VSCode 可视化调试支持
+------------------------------
+
+本节将介绍如何在VSCode可视化环境中进行调试。可以使用使用网页版的Codespace，也可以使用Codespace + 本地VScode（具体方法就是在打开Codespace时，点击Open In Visual Studio Code即可）。
+
+要在Codespace中结合vscode使用GDB进行调试，需要确保Codespace中有GDB、QEMU等相关环境。如果没有环境可以在master分支下执行环境配置指令：
+
+.. code-block:: bash
+
+  git checkout master // 切换到master分之
+  make codespaces_setenv // 配置Codespace环境
+
+然后设置“add-auto-load-safe-path”路径，将“add-auto-load-safe-path /workspaces/YOUR_REPO_NAME/.gdbinit”语句添加到/home/codespace/.gdbinit文件中，如果该/root/codespace路径下没有.gdbinit文件，则创建后添加前面的语句。语句中“YOUR_REPO_NAME”则是你对应仓库的名字。
+
+最后启动GDB调试：
+
+.. code-block:: bash
+
+   make debug
+
+之后则可以设置断点进行GDB调试。
+
 在 Qemu 平台上运行 uCore-Tutorial-2023S
 ------------------------------------------------------------
 
