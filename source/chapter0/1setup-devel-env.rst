@@ -22,19 +22,17 @@ classroom配置
 
    1.在网络浏览器中用自己的github id登录github.com
 
-   2.接收实验练习uCore-RV-64的github classroom在线邀请 <https://classroom.github.com/a/bY_uu2Q3>，根据提示接受该实验练习。
+   2.接收实验练习uCore-Tutorial-Code-2023S的github classroom在线邀请 <https://classroom.github.com/a/2HJnOy4u>，根据提示接受该实验练习。
 
-   3.完成上一步后，你的实验练习uCore-RV-64的github repository会被自动建立好，刷新页面即可看到github repository的链接，点击此github repository的链接，就可看到你要完成的实验了。
+   3.完成上一步后，你的实验练习uCore-Tutorial-Code-2023S的github repository会被自动建立好，刷新页面即可看到github repository的链接，点击此github repository的链接，就可看到你要完成的实验了。
 
-   4.在你的实验练习的网页的中上部可以看到一个醒目的code绿色按钮，点击后，可以进一步看到 codespace 标签和醒目的create codesapce on main绿色按钮。请点击这个绿色按钮，就可以进入到在线的ubuntu + vscode环境中。
+   4.在你的实验练习的网页的中上部可以看到一个醒目的code绿色按钮，点击后，可以进一步看到 codespace 标签和醒目的create codesapce on main绿色按钮。请点击这个绿色按钮，就可以进入到在线的ubuntu + vscode环境中。注：当创建好codespace之后，下次也可以使用vscode打开codespace，即在codespace标签有三个点（“···”）的按钮，点击后在“Open in”中选择“Open in Visual Studio Code”。
    
-   5.配置环境。环境包括实验开发环境（rustc，qemu等工具）和github classroom自动评分环境。你可以在vscode的terminal中执行make setenv（需要在master分支下）自动配置两种环境。而这两种环境也可以分别配置，make ubuntu_setenv可以自动配置实验开发环境，make classroom_setenv可以自动配置github classroom自动评分环境。
+   5.配置环境。可以按照下面的环境安装提示在vscode的 `console` 中安装配置开发环境：rustc，qemu等工具。注：也可在vscode的 `console` 中执行 ``make codespaces_setenv`` 来自动安装配置开发环境（执行``sudo``需要root权限，仅需要执行一次）。
 
-   6.然后就可以基于在线vscode进行开发、运行、提交等完整的实验过程了，也可以在配置好环境的其他ubuntu中进行实验。实验共分为8章对应着分支ch1、ch2、ch3、ch4、ch5、ch6、ch7、ch8，你可以切换到对应的分支，然后根据实验的在线文档 <https://ucore-rv-64.github.io/uCore-RV-64-doc/index.html>的要求进行实验并提交。
+   6.然后就可以基于在线vscode进行开发、运行、提交等完整的实验过程了，也可以在配置好环境的其他ubuntu中进行实验。
 
-   7.完成提交后会触发classroom提供的自动测试功能，你可以点击仓库名下边的“Actions”标签查看自动测试的结果，第一次提交触发自动测试可能需要执行5-7分钟，随后的提交所触发的自动测试则不需要这么长的时间。
-
-上述的3，4步不是必须的，你也可以直接克隆Github Classroom生成git repository到本地，按照下面的环境安装提示配置好本地的开发环境，然后在本地进行实验开发与提交。
+   7.完成提交后会触发classroom提供的自动测试功能，你可以点击仓库名下边的“Actions”标签查看自动测试的结果。
 
 系统环境配置
 -------------------------------
