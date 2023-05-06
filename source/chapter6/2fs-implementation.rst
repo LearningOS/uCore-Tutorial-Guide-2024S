@@ -543,7 +543,7 @@ balloc(位于nfs/fs.c)会分配一个新的buf缓存。而iupdate函数则是把
 
     // namei = 获得根目录，然后在其中遍历查找 path
     struct inode *namei(char *path) {
-    struct inode *dp = root_dir();
+        struct inode *dp = root_dir();
         return dirlookup(dp, path, 0);
     }
 
@@ -555,8 +555,7 @@ balloc(位于nfs/fs.c)会分配一个新的buf缓存。而iupdate函数则是把
     }
 
     // 遍历根目录所有的 dirent，找到 name 一样的 inode。
-    struct inode *
-    dirlookup(struct inode *dp, char *name, uint *poff) {
+    struct inode *dirlookup(struct inode *dp, char *name, uint *poff) {
         uint off, inum;
         struct dirent de;
         // 每次迭代处理一个 block，注意根目录可能有多个 data block
