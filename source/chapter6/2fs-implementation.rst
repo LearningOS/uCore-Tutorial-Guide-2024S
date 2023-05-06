@@ -248,8 +248,7 @@ inode的操作
 .. code-block:: c
 
     // 找到 inum 号 dinode 绑定的 inode，如果不存在新绑定一个
-    static struct inode *
-    iget(uint dev, uint inum) {
+    static struct inode *iget(uint dev, uint inum) {
         struct inode *ip, *empty;
         // 遍历查找 inode table
         for (ip = &itable.inode[0]; ip < &itable.inode[NINODE]; ip++) {
