@@ -554,7 +554,7 @@ balloc(位于nfs/fs.c)会分配一个新的buf缓存。而iupdate函数则是把
         return r;
     }
 
-    // 便利根目录所有的 dirent，找到 name 一样的 inode。
+    // 遍历根目录所有的 dirent，找到 name 一样的 inode。
     struct inode *
     dirlookup(struct inode *dp, char *name, uint *poff) {
         uint off, inum;
