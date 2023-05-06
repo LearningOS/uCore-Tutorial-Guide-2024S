@@ -581,8 +581,7 @@ fileopen 还可能会导致文件 truncate，也就是截断，具体做法是�
 
 .. code-block:: c
 
-    static struct inode *
-    create(char *path, short type) {
+    static struct inode *create(char *path, short type) {
         struct inode *ip, *dp;
         if(ip = namei(path) != 0) {
             // 已经存在，直接返回
@@ -613,8 +612,7 @@ fileopen 还可能会导致文件 truncate，也就是截断，具体做法是�
 
     // os/fs.c
     // Write a new directory entry (name, inum) into the directory dp.
-    int
-    dirlink(struct inode *dp, char *name, uint inum)
+    int dirlink(struct inode *dp, char *name, uint inum)
     {
         int off;
         struct dirent de;
