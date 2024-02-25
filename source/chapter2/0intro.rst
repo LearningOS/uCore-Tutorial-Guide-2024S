@@ -37,8 +37,8 @@
 
 .. code-block:: console
 
-   $ cd uCore-Tutorial-Code-2023A
-   $ git clone https://github.com/LearningOS/uCore-Tutorial-Test-2023A.git user
+   $ cd uCore-Tutorial-Code-2024S
+   $ git clone https://github.com/LearningOS/uCore-Tutorial-Test-2024S.git user
 
 上面的指令会将测例仓库克隆到代码仓库下并命名为 ``user`` ，注意 ``/user`` 在代码仓库的 ``.gitignore`` 中，因此不会出现 ``.git`` 文件夹嵌套的问题，并且你 ``checkout`` 代码仓库时也不会影响测例仓库的内容。
 
