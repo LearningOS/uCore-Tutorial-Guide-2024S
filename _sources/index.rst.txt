@@ -3,7 +3,7 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-uCore-Tutorial-Guide 2023 Autumn
+uCore-Tutorial-Guide 2024 Spring
 ==================================================
 
 .. toctree::
@@ -40,7 +40,7 @@ uCore-Tutorial-Guide 2023 Autumn
    rest-example
    log
 
-欢迎来到 uCore-Tutorial-Guide 2023 Autumn!
+欢迎来到 uCore-Tutorial-Guide 2024 Spring!
 
 指导书简介
 ----------------------------
