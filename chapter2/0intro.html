@@ -308,7 +308,12 @@
 <p>上面的指令会将测例仓库克隆到代码仓库下并命名为 <code class="docutils literal notranslate"><span class="pre">user</span></code> ，注意 <code class="docutils literal notranslate"><span class="pre">/user</span></code> 在代码仓库的 <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> 中，因此不会出现 <code class="docutils literal notranslate"><span class="pre">.git</span></code> 文件夹嵌套的问题，并且你 <code class="docutils literal notranslate"><span class="pre">checkout</span></code> 代码仓库时也不会影响测例仓库的内容。</p>
 <div class="admonition note">
 <p class="admonition-title">注解</p>
-<p>如果测例仓库有所更新或者你切换了代码仓库的分支，你可能需要清理掉测例仓库原版的编译结果，此时需要执行</p>
+<p>在你切换代码仓库的分支前，请务必先清理代码仓库原分支的编译结果，此时需要执行</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>make clean
+</pre></div>
+</div>
+<p>如果你没有清理编译结果便切换了分支，可能出现清理后也无法跑通 base 的情况，此时请尝试切换回原分支并执行清理指令。</p>
+<p>如果测例仓库有所更新，你可能需要清理掉测例仓库原版的编译结果，此时需要执行</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>make -C user clean
 </pre></div>
 </div>
@@ -318,6 +323,7 @@
 <span class="gp">$ </span><span class="nb">cd</span> ..
 </pre></div>
 </div>
+<p>注意，在 lab3 之前单独清理测例仓库可能导致 os 无法正常启动，遇到该问题时请执行代码仓库的编译结果清理。</p>
 </div>
 <p>我们可以通过 <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">user</span></code> 生成用户程序，最终将 <code class="docutils literal notranslate"><span class="pre">.bin</span></code> 文件放在 <code class="docutils literal notranslate"><span class="pre">user/target/bin</span></code> 目录下。</p>
 <div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git checkout ch2
