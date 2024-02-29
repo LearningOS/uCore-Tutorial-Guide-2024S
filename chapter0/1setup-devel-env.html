@@ -477,8 +477,8 @@ qemu-riscv64 --version
 <div class="section" id="vscode">
 <h2>VSCode 可视化调试支持<a class="headerlink" href="#vscode" title="永久链接至标题">¶</a></h2>
 <p>本节将介绍如何在VSCode可视化环境中进行调试。可以使用使用网页版的Codespace，也可以使用Codespace + 本地VScode（具体方法就是在打开Codespace时，点击Open In Visual Studio Code即可）。</p>
-<p>要在Codespace中结合vscode使用GDB进行调试，需要确保Codespace中有GDB、QEMU等相关环境。如果没有环境可以在master分支下执行环境配置指令：</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout master // 切换到master分之
+<p>要在Codespace中结合vscode使用GDB进行调试，需要确保Codespace中有GDB、QEMU等相关环境。如果没有环境可以在 main 分支下执行环境配置指令：</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git checkout main // 切换到 main 分支
 make codespaces_setenv // 配置Codespace环境
 </pre></div>
 </div>
