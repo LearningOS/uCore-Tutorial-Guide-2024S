@@ -21,12 +21,12 @@
     $ stat os/main.c 
 
     File: os/main.c
-    Size: 491             Blocks: 8          IO Block: 4096   regular file
-    Device: 805h/2053d      Inode: 4726542     Links: 1
-    Access: (0664/-rw-rw-r--)  Uid: ( 1000/deathwish)   Gid: ( 1000/deathwish)
-    Access: 2021-09-08 17:52:06.915389371 +0800
-    Modify: 2021-09-08 17:52:06.127425836 +0800
-    Change: 2021-09-08 17:52:06.127425836 +0800
+    Size: 344             Blocks: 8          IO Block: 4096   regular file
+    Device: 802h/2050d      Inode: 1180345     Links: 1
+    Access: (0664/-rw-rw-r--)  Uid: ( 1000/  holder)   Gid: ( 1000/  holder)
+    Access: 2024-04-07 12:58:26.928238664 +0800
+    Modify: 2024-04-07 12:58:26.928238664 +0800
+    Change: 2024-04-07 12:58:26.928238664 +0800
     Birth: -
 
 ``stat`` 工具展示了 ``main.c`` 的如下信息：
@@ -54,13 +54,13 @@
 
     $ stat os
     
-    File: os/main.c
-    Size: 491             Blocks: 8          IO Block: 4096   regular file
-    Device: 805h/2053d      Inode: 4726542     Links: 1
-    Access: (0664/-rw-rw-r--)  Uid: ( 1000/deathwish)   Gid: ( 1000/deathwish)
-    Access: 2021-09-08 17:52:06.915389371 +0800
-    Modify: 2021-09-08 17:52:06.127425836 +0800
-    Change: 2021-09-08 17:52:06.127425836 +0800
+    File: os
+    Size: 4096            Blocks: 8          IO Block: 4096   directory
+    Device: 802h/2050d      Inode: 1180331     Links: 2
+    Access: (0775/drwxrwxr-x)  Uid: ( 1000/  holder)   Gid: ( 1000/  holder)
+    Access: 2024-04-07 12:52:32.555044133 +0800
+    Modify: 2024-04-07 12:54:23.288661366 +0800
+    Change: 2024-04-07 12:54:23.288661366 +0800
     Birth: -
 
 directory 表明 ``os`` 是一个目录，从 Access 字符串的首位 ``d`` 也可以看出这一点。对于目录而言， Access 的 ``rwx`` 含义有所不同：
